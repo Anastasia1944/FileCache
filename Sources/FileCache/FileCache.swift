@@ -23,6 +23,10 @@ public class FileCache {
         tasks[index] = task
     }
     
+    public func removeAllTasks() {
+        tasks = []
+    }
+    
     public func saveTasksToJSON(usingFileName fileName: String) {
         guard let documentDirectoryURL = FileManager.default.urls(for: .documentDirectory,
                                                                   in: .userDomainMask).first else {
