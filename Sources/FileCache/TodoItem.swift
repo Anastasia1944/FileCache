@@ -16,7 +16,7 @@ public struct TodoItem: Equatable {
     public let text: String
     public let taskImportance: TaskImportance
     public let deadlineDate: Date?
-    public var done: Bool
+    public let done: Bool
     public let creationDate: Date
     public let changeDate: Date?
     public let hexColor: String?
